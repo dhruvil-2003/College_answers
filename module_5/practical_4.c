@@ -39,17 +39,13 @@ int CheckPerfect(int b){
 }
 
 int CheckPrime(int a){
-    int i,ans;
+    int i,ans=0;
     for(i=2;i<a;i++){
-        if(a%i==0){
-            ans=0;
-            break;
-        }
-        else{
+        if(a%i==0)
             ans=1;
+            break;  
         }
-    }
-    if(ans==1){
+    if(ans==0){
         printf("Number is Prime\n");
     }
     else{
